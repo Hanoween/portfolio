@@ -1,0 +1,41 @@
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #89D0EA;
+}
+
+.section.s1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: aquamarine;
+}
+
+.header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("images/space.jpg");
+    padding: 0 32px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.middle {
+    display: flex;
+    gap: 250px;
+    align-items: center;
+    padding: 0 125px;
+}
+
+.aboutMe {
+    border-radius: 50px;
+    height: 450px;
+    width: 500px;
+    font-size: 40px;;
+}
