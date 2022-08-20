@@ -1,14 +1,26 @@
-
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #89D0EA;
+    zoom: 100%;
 }
 
-.section.s1 {
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidedrop img {
+    position: static;
+}
+.section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.s1 {
     background-color: aquamarine;
+    padding-bottom: 110px;
 }
 
 .header {
@@ -20,22 +32,123 @@ body {
     padding: 0 32px;
 }
 
-.contact {
-    display: flex;
-    align-items: center;
+#contact {
     gap: 50px;
 }
 
 .middle {
-    display: flex;
     gap: 250px;
-    align-items: center;
     padding: 0 125px;
 }
 
-.aboutMe {
+#aboutMe {
     border-radius: 50px;
     height: 450px;
     width: 500px;
-    font-size: 40px;;
+    font-size: 40px;
+}
+
+.dropdown-content {
+    text-align: center;
+    display: none;
+    position: absolute;
+    background-color:#b66982;
+    color: white;
+    border-radius: 10px;
+    width: 500px;
+    margin: -4px 0 0 0;
+    animation: drop 0.9s;
+    animation-fill-mode: forwards;
+    opacity: 1;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+.s2 {
+    padding: 50px 90px 100px 90px;
+    background-color: #89D0EA;
+}
+
+#manga {
+    text-align: right;
+}
+
+#mangaCovers {
+    gap: 300px;
+}
+
+hr {
+    margin: 20px 50px;
+    background-color: black;
+    border-color: black;
+    position: relative;
+    bottom: 20px;
+}
+
+.sidedrop .dropbtn {
+    position: fixed; z-index: 4;
+}
+.sidedrop-content {
+    z-index: 2;
+    display: none;
+    font-size: 12px;
+    text-align: justify;
+    width: 350px;
+    height:auto;
+    position: fixed;
+    padding: 16px 32px 20px 50px;
+    background-color: #b66982;
+    animation: slide-in 300ms ease-in-out forwards;
+    transform-origin: left center;
+}
+
+.guts {
+    left: 291px;
+    width: 400px;
+}
+
+.sbr {
+    left: 569px;
+    font-size: 14px;
+}
+
+.punpun {
+    left: 258px;
+    font-size: 15px;
+    animation: slide 300ms ease-in-out forwards;
+}
+
+.show {
+    display: block;
+}
+
+/*Animations*/
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+@keyframes slide-in {
+    0%{
+        transform: translateX(-150px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
